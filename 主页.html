@@ -1,0 +1,226 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>最美长阳</title>
+<style type="text/css">
+#wrap                          /*最外层包裹盒子 使得整体居中显示*/
+{
+	width: 1500px;
+	margin: 0 auto;
+	border: 1px solid #fff;
+}
+.picutre_many img 
+{
+	width: 400px;
+	height: 200px;
+	padding: 10px 0px;
+}
+p {                              /*段落属性设置*/
+	font-size: 20px;
+	text-indent: 2em;
+	line-height:1.5em;
+}
+li {
+	font-family: "Microsoft Yahei";
+	color: red;
+}	
+li:hover {
+	color: blue;
+}	
+span{
+font-family: "Microsoft Yahei";
+color: #000;
+}	
+span:hover {
+color: #0f0;
+}
+div0 {   /*长条菜单盒子*/
+	width: 750;
+	padding: 5px 20px;
+	border: 5px solid #F5EE03;
+	float: left;
+	margin: 5px;
+	background: 000;
+	position: relative;
+	left: 35;
+	top: -110px;
+}
+div11 {   /*主题图片框*/                           
+	width: 800;
+	padding: 20px 10px;
+	border: 1px dotted write;
+	float: left;
+	margin: 10px;
+	background: 000;
+}
+div01 {  /*图片滚动框*/
+	width: 600;
+	hight:400px;
+	padding: 10px 10px;
+	border: 0px dotted write;
+	float: left;
+	margin: 10px;
+	background: 000;
+}
+div1 {/*最大框*/
+	width: 1200px;
+	hight:500px;
+	padding: 0px;
+	border-bottom: 8px dotted #3ff;
+	border-right: 8px dotted #3ff;
+	float: right;
+	margin: 10px;
+	background: 000;
+	position: relative;
+	left: -28;
+	top: -520px;
+}
+div2 { /*网页导航框*/
+	padding: 20px;
+	width: 150px;
+	border: 3px dotted red;
+	margin: 0px;
+	float: left;
+	line-height: 2.5em;
+	position: relative;
+	left: -980;
+	top: 12px;
+}
+
+div3 {/*导航图片框*/
+	width: 200;
+	padding: 0px;
+	border: 2px dotted 000;
+	float:left;
+	margin: 5px;
+	position: relative;
+	left: -777;
+	top: -60px;
+}
+div4 {    /*左*/ 
+width: 25;
+padding: 5px;
+border: 1px solid red;
+margin: 1px;
+background: red;
+position:fixed;
+left:5;
+top:90;
+}
+div5 {   /*右*/
+width: 25;
+padding: 5px;
+border: 1px solid blue;
+margin: 1px;
+background: red;
+position:fixed;
+right:5;
+top:90;
+}
+div6{    /*div6-9四个矩形框*/
+width: 577px;
+hight:620px;
+padding: 0px;
+border: 5px solid red;
+margin: 6px;
+float:left;		
+	}
+div7{
+width: 577px;
+hight:620px;
+padding: 0px;
+border: 5px solid #ffc;
+margin: 6px;
+background: #ffc;
+float:right;		
+	}
+div8{
+width: 577px;
+hight:620px;
+padding: 0px;
+border: 5px solid #ffc;
+margin: 6px;
+background: #ffc;			
+float:left;	
+	}
+div9{
+width: 577px;
+hight:620px;
+padding: 0px;
+border: 5px solid red;
+margin: 6px;
+float:right;		
+	}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div11><img src="changyang0.PNG" alt="长阳风景图" WIDTH="850" HEIGHT="140"></div11>
+  <div01>
+    <div id="list" class=" picutre_many"
+        style="overflow: hidden; height: 250px; width: 600px; margin:0;">
+      <table cellspacing="0" cellpadding="0"
+            style="width: 680px; border: 0px;">
+        <tr>
+          <td id="list1"><table style="border: 0px;" cellpadding="0" cellspacing="0">
+              <tr id="pic">
+                <td><img style="border: 0px;" alt="" src="a1.jpg" /></td>
+                <td><img style="border: 0px;" alt="" src="a2.jpg" /></td>
+                <td><img style="border: 0px;" alt="" src="a3.jpg" /></td>
+                <td><img style="border: 0px;" alt="" src="a5.jpg" /></td>
+              </tr>
+            </table></td>
+          <td id="list2"></td>
+        </tr>
+      </table>
+    </div>
+  </div01>
+  <script type="text/javascript">
+        /*图片滚动效果*/
+        var speedpic = 20;//速度数值越大速度越慢
+        document.getElementById("list2").innerHTML = document.getElementById("list1").innerHTML;
+        function Marqueepic() {
+            if (document.getElementById("list2").offsetWidth
+                    - document.getElementById("list").scrollLeft <= 0) {
+                document.getElementById("list").scrollLeft -= document
+                        .getElementById("list1").offsetWidth;
+            } else {
+                document.getElementById("list").scrollLeft++;
+            }
+        }
+        var MyMarpic = setInterval(Marqueepic, speedpic);
+        document.getElementById("list").onmouseover = function() {
+            clearInterval(MyMarpic);
+        }
+        document.getElementById("list").onmouseout = function() {
+            MyMarpic = setInterval(Marqueepic, speedpic);
+        }
+    </script>
+  <div0> &nbsp;&nbsp;
+	  <a href="主页.html" target="_black"><span>微站首页</span></a>&nbsp;&nbsp;
+	  <a href="长阳百科.html" target="_black"><span>长阳百科</span></a>&nbsp; &nbsp;
+	  <a href="巴土风韵.html" target="_black"><span>巴土风韵</span></a>&nbsp;&nbsp;
+	  <a href="文化长阳.html" target="_black"><span>文化长阳</span></a>&nbsp; &nbsp;
+	  <a href="风景大全.html" target="_black"><span>风景大全</span></a>&nbsp; &nbsp;
+	  <a href="阅读推荐.html" target="_black"><span>阅读推荐</span></a>&nbsp; 	
+ </div0>
+  <div3><img src="daohang.PNG" alt="导航标志" WIDTH="200" HEIGHT="60"></div3>
+  <div2>
+    <ul>
+      <a href="风景名胜.html" title="清江画廊、三峡大坝、丹水漂流" target="_black"><li>风景名胜</li></a> 
+      <a href="历史文化.html" title="撒叶儿和、南曲、巴山舞" target="_black"><li>历史文化</li></a> 
+      <a href="特色美食.html" title="炕洋芋、银鱼、椪柑" target="_black"><li>特色美食</li></a> 
+      <a href="风俗人情.html" title="文字、习俗、节庆" target="_black"><li>风俗人情</li></a>
+    </ul>
+    <img src="changyang4.jpg" alt="长阳风景图" WIDTH="160" HEIGHT="228"> </div2>
+  <div1>
+ <div6><img src="z1.jpg" alt="长阳风景图" WIDTH="577" HEIGHT="235"></div6>
+ <div7><h2>文化简介：</h2><p>长阳土家族自治县是湖北省宜昌市所辖的一个自治县。长阳历史悠久、文化灿烂，是长江流域古文明的发源地，著名的“长阳人”的故乡、巴人故里和土家族的发祥地。长阳文化灿烂，素有“歌舞之乡”之称，山歌、南曲、巴山舞被誉为“长阳文化三件宝”，奇石、盆景、根艺被誉为“长阳文化产业三件宝”。</p></div7>
+ <div8><h2>资源概述：</h2><p>长阳资源丰富、物种繁多。清江横贯长阳全境148公里，是长江在湖北境内第二大支流，汇入清江的大小溪河共428条，隔河岩、高坝洲两大水库有近40亿立方米的库容。长阳物种繁多，县域内各类动物种类1000多种、植物种类3000多种。长阳生态优良。清江水体质量良好，饮用水源水质达标率100%。</p></div8>
+ <div9><img src="z2.jpg" alt="长阳风景图" WIDTH="577" HEIGHT="235"></div9>
+  </div1>
+</div>
+<div4><p style="font-size:30px; "    ><br />三百里画廊在长阳</p></div4>
+<div5><p style="font-size:30px; "    ><br />八百里清江美如画</p></div5>
+</body>
+</html>

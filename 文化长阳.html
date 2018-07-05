@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文化长阳</title>
+<style type="text/css">
+#wrap{width:900px; margin:0 auto; border:1px padding:0px;solid #fff;}
+h1{text-align:center;}	
+div1{
+width:900px;
+padding:20px;
+border:8px dotted #6ff;
+margin:10px;
+background:#cff;
+float:left
+}	
+p{text-indent: 2em;
+line-height:1.5em;
+font-size:25px;
+font-family:"楷体";}
+	.picutre_many img{ width:400px; height:200px;}
+</style>
+</head>
+
+<body>
+
+<h1>文化长阳</h1>
+<div id="wrap">
+<div1>
+
+  <div id="list" class=" picutre_many"
+        style="overflow: hidden; height: 250px; width: 900px; margin:0;">
+        <table cellspacing="0" cellpadding="0"
+            style="width: 680px; border: 0px;">
+            <tr>
+                <td id="list1">
+                    <table style="border: 0px;" cellpadding="0" cellspacing="0">
+                        <tr id="pic">
+                            <td><img style="border: 0px;" alt="" src="w1.png" /></td>
+                            <td><img style="border: 0px;" alt="" src="w2.jpg" /></td>
+                            <td><img style="border: 0px;" alt="" src="w3.png" /></td>
+                            <td><img style="border: 0px;" alt="" src="w4.jpg" /></td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="list2"></td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript">
+        /*图片滚动效果*/
+        var speedpic = 20;//速度数值越大速度越慢
+        document.getElementById("list2").innerHTML = document.getElementById("list1").innerHTML;
+        function Marqueepic() {
+            if (document.getElementById("list2").offsetWidth
+                    - document.getElementById("list").scrollLeft <= 0) {
+                document.getElementById("list").scrollLeft -= document
+                        .getElementById("list1").offsetWidth;
+            } else {
+                document.getElementById("list").scrollLeft++;
+            }
+        }
+        var MyMarpic = setInterval(Marqueepic, speedpic);
+        document.getElementById("list").onmouseover = function() {
+            clearInterval(MyMarpic);
+        }
+        document.getElementById("list").onmouseout = function() {
+            MyMarpic = setInterval(Marqueepic, speedpic);
+        }
+    </script>
+<p>长阳历史文化久远。远在西汉高祖6年就建立了郡制，史称广阳郡。长阳资源丰富独特。地热资源分布面积大，蕴藏丰富，具有出水温度高，富含多种矿物质的特点。长阳素有“歌舞之乡”之称，长阳山歌、长阳南曲、巴山舞被誉为“长阳文化三件宝”，奇石、盆景、根艺被誉为“长阳文化产业三件宝”。 2006年，土家族“撒叶儿嗬”入选国家首届非物质文化遗产保护项目，在2007年十四届全国广场舞蹈比赛中荣膺群星奖。长阳山歌、南曲、长阳薅草锣鼓和都镇湾故事入选省级第一批非物质文化遗产保护名录。</p>  
+<h2>长阳山歌</h2> 
+<p>长阳山歌以其丰富的演唱内容，灵活的歌唱形式，高亢嘹亮、热烈奔放的演唱风格，与南曲、巴山舞并誉为长阳文化“三件宝” 。劳动歌产生于劳动中，又在劳动中歌唱。不同的劳动方式和自然环境，形成了劳动歌的不同风格。如清江船工和排工就有雄壮有力的号子歌，田间锄草有锣鼓歌。长阳的山歌有独唱、对唱、一人领众人和等多种演唱形式。 
+五句子山歌是长阳山歌、民歌中特别发达的样式，它以七言五句为基本格，五句为一段，有一段独立成章。五句子山歌的第五句往往是意境升华，艺术情趣之所在，故有“五句山歌五句单，四句容易五句难”的说法。由此，五句子要求第四句要能结束，第五句要奇峰突起，画龙点睛。 </p>  
+<h2>南曲  </h2> 
+<p>南曲又称之为“丝弦班”。它是湖北古老的地方曲种，词曲丰富，优美动听。解放前，此曲逐渐衰落，很多人只知南曲之名，而未闻南曲之音。南曲主要流传于长阳、五峰境内，据文词分析，与其它曲种有相似之处，但具有独特之点，虽非土生土长，但与长阳地方语言、民歌小调颇有结合，因是长阳首先挖掘整理出来的，故定名为《长阳南曲》。</p>  
+<h2>巴山舞  </h2> 
+<p>巴山舞的特点是：伐鼓以祭祀，叫啸以兴衰，唱腔高亢，舞姿粗犷，体现了土家儿女的淳朴和憨厚；其形式为：一人掌鼓，众人对跳，由掌鼓者领唱，对舞者边唱边舞。近代挖掘巴楚文化，将其提炼升华，命名为“巴山舞”、“跳丧舞”之美称，名扬五湖四海。 </p>  
+<h2>土家四道茶</h2> 
+<p>四道茶具有独特的喻意。一道茶——“罐罐茶”，用来招待日常来客。二道茶——鸡蛋茶，是家中添小孩后，整“祝米酒”时才上鸡蛋茶。三道茶——阴米茶，是用在婚宴酒席前食用。四道茶——酥茶汤，在冬季用来御寒取暖。</p> 
+<h2>西兰卡普 </h2> 
+<p>西兰卡普可以上溯到古代巴人时期。作为土家族先民的古代巴人，除从事农业生产外，还善于纺织，其“桑蚕、麻”成为贡品。改土归流后，土家族西兰卡普的挑织技艺进一步提高，尤其是土家族姑娘，从不便随其母操习挑织技艺，姑娘长大出嫁时，还必须有自己亲手编织的西兰卡普作品作陪嫁品。 </p> 
+<p>香炉石遗址位于鄂西长阳土家族自治县渔峡口镇东南的清江 北岸，东距长阳县城97公里，地处清江中游。遗址地势东北高西南低，呈斜坡状，地理环境十分独特，属典型的河旁山寨型文化遗址。</p> 
+</div1>
+	</div>
+
+</body>
+</html>
